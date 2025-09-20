@@ -1,5 +1,13 @@
 import { Container, Typography, Avatar, Box, Chip } from "@mui/material";
-import { Code, Web, Storage, Brush } from "@mui/icons-material";
+import {
+  Code,
+  Web,
+  Storage,
+  Brush,
+  Phone,
+  Email,
+  LocationOn,
+} from "@mui/icons-material";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 
@@ -100,7 +108,7 @@ export default function About() {
               curiosity is endless. I love applying my learnings and curiosity
               in coding, even surprising myself. I give my all to creating
               meaningful and useful web applications. I have a foundation in
-              both frontend and backend development,
+              both frontend and backend development.
             </Typography>
             <Typography
               variant="body1"
@@ -112,6 +120,62 @@ export default function About() {
               time, I usually play Valorant or watch anime. Sometimes I also do
               nothing and just relax.
             </Typography>
+
+            {/* Contact Information */}
+            <Box sx={{ mt: 4 }}>
+              <Typography
+                variant="h6"
+                gutterBottom
+                sx={{
+                  borderBottom: 1,
+                  borderColor: "divider",
+                  pb: 1,
+                  mb: 2,
+                }}
+              >
+                Contact Information
+              </Typography>
+
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: { xs: "column", sm: "row" },
+                  gap: 3,
+                  alignItems: { xs: "flex-start", sm: "center" },
+                  flexWrap: "wrap",
+                }}
+              >
+                <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                  <Phone color="primary" fontSize="small" />
+                  <Typography variant="body2" color="text.secondary">
+                    +63 921 532 3232
+                  </Typography>
+                </Box>
+
+                <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                  <Email color="primary" fontSize="small" />
+                  <Typography
+                    variant="body2"
+                    color="primary"
+                    component="a"
+                    href="mailto:your.email@example.com"
+                    sx={{
+                      textDecoration: "none",
+                      "&:hover": { textDecoration: "underline" },
+                    }}
+                  >
+                    jett.r.esteban@gmail.com
+                  </Typography>
+                </Box>
+
+                <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                  <LocationOn color="primary" fontSize="small" />
+                  <Typography variant="body2" color="text.secondary">
+                    Plaridel, Bulacan, Philippines, 3004
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
           </Box>
 
           <Box>
