@@ -121,7 +121,6 @@ export default function About() {
               nothing and just relax.
             </Typography>
 
-            {/* Contact Information */}
             <Box sx={{ mt: 4 }}>
               <Typography
                 variant="h6"
